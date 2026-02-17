@@ -37,7 +37,6 @@
   - 互动：点赞、收藏、评论（对应 repository 与 controller）
   - 社交：关注与粉丝
   - 消息：/api/messages 文本/文件消息、会话、未读计数、已读标记
-  - AI：/api/ai/generate 简单文章生成，见 AiController.java
 前端技术栈
 
 - 框架与构建：Vue 3、Vite、Pinia、Vue Router、Axios
@@ -65,7 +64,6 @@
   - 启动（使用 Maven Wrapper）：
     
     ```
-    cd c:\Users\ruia3\Desktop\spb\大作业\boke
     .\mvnw.cmd spring-boot:run
     ```
   - 或打包运行：
@@ -79,7 +77,6 @@
   - 开发模式：
     
     ```
-    cd c:\Users\ruia3\Desktop\spb\大作业\boke\frontend
     npm install
     npm run dev
     ```
