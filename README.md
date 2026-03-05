@@ -1,3 +1,29 @@
+效果展示图：
+博主登录
+主页面
+<img width="2523" height="1167" alt="image" src="https://github.com/user-attachments/assets/76a4d328-a740-4efb-90af-f69452a9e206" />
+草稿箱功能
+<img width="2524" height="1155" alt="image" src="https://github.com/user-attachments/assets/bd028795-20ad-440c-9bb1-a512257bfdce" />
+文章编辑器功能
+<img width="2522" height="1252" alt="image" src="https://github.com/user-attachments/assets/65ff527e-0c67-4fec-91c3-b043227523fd" />
+后台管理功能
+<img width="2517" height="1156" alt="image" src="https://github.com/user-attachments/assets/1a780252-fc80-4adf-ac98-bf61e750253e" />
+我的收藏功能
+<img width="2508" height="1167" alt="image" src="https://github.com/user-attachments/assets/61f81760-008b-4008-9241-fb3678cb31b7" />
+私聊功能
+<img width="2511" height="1175" alt="image" src="https://github.com/user-attachments/assets/214040f3-9648-4c23-8ea4-fd48f6163ebe" />
+关注列表
+<img width="2530" height="1175" alt="image" src="https://github.com/user-attachments/assets/90dd0dd4-f805-49cf-abe0-48a26a602ae4" />
+个人资料页面
+<img width="2526" height="1173" alt="image" src="https://github.com/user-attachments/assets/e58c27fe-589a-4d5e-983f-19b8c6563bc5" />
+个人主页页面
+<img width="2550" height="892" alt="image" src="https://github.com/user-attachments/assets/6d5f0d11-a649-4947-ab75-74546f56260e" />
+登录界面
+<img width="2511" height="1167" alt="image" src="https://github.com/user-attachments/assets/88a53f24-8cc2-4af7-949b-499ed11e93b4" />
+一般用户登录
+<img width="2508" height="1229" alt="image" src="https://github.com/user-attachments/assets/28f0c638-66d2-4f74-ac0c-fa3e10b3d761" />
+
+
 架构概览
 
 - 前后端分离：后端为 Spring Boot 3（Java 17）REST API，前端为 Vue 3 + Vite 的单页应用
