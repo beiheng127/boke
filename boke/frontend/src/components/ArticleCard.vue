@@ -207,7 +207,6 @@ const togglePublish = async () => {
     }))
   } catch (error) {
     console.error('切换发布状态失败:', error)
-    alert('操作失败: ' + (error.response?.data?.message || error.message))
   }
 }
 

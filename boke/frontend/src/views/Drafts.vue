@@ -206,7 +206,6 @@ async function publishDraft(draftId) {
     drafts.value = drafts.value.filter(draft => draft.id !== draftId)
   } catch (error) {
     console.error('发布草稿失败:', error)
-    alert('发布失败: ' + (error.response?.data?.message || error.message))
   }
 }
 

@@ -86,7 +86,7 @@ public class CommentController {
                         try {
                             return Map.of(
                                     "id", c.getId(),
-                                    "user", c.getUser() != null ? c.getUser().getUsername() : "未知用户",
+                                    "user", c.getUser() != null ? c.getUser().getDisplayName() : "未知用户",
                                     "content", c.getContent() != null ? c.getContent() : "",
                                     "createdAt", c.getCreatedAt() != null ? c.getCreatedAt() : Instant.now());
                         } catch (Exception e) {

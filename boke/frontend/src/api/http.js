@@ -86,7 +86,6 @@ http.interceptors.response.use(
                 code: 'NETWORK_ERROR'
             })
         }
-
         if (error.response?.status === 403 || error.response?.status === 401) {
             console.log('🔍 Token无效，执行登出')
             setAuthToken(null)
@@ -97,7 +96,6 @@ http.interceptors.response.use(
                 window.location.href = '/login?redirect=' + encodeURIComponent(window.location.pathname)
             }
         }
-
         return Promise.reject(error)
     }
 )

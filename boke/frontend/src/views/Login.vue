@@ -240,10 +240,9 @@ onMounted(() => {
   }
 })
 
-// 监听登录表单变化，决定是否显示验证码
+// 监听登录表单变化，决定是否显示人机验证
 watch([loginUsername, loginPassword], ([username, password]) => {
   if (username && password && !showCaptcha.value) {
-    // 当用户开始输入登录信息时显示验证码
     showCaptcha.value = true
     captchaVerified.value = false
   }

@@ -258,6 +258,7 @@ onUnmounted(() => {
   display: flex;
   flex-direction: column;
   height: 100%;
+  overflow: hidden;
 }
 
 .sidebar-header {
@@ -305,6 +306,24 @@ onUnmounted(() => {
   flex: 1;
   overflow-y: auto;
   min-height: 0;
+}
+
+.conversations-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.conversations-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.conversations-list::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 10px;
+}
+
+.conversations-list::-webkit-scrollbar-thumb:hover {
+  background: #a1a1a1;
 }
 
 .loading-state, .empty-state {
@@ -485,7 +504,7 @@ onUnmounted(() => {
   .conversations-sidebar {
     border-right: none;
     border-bottom: 1px solid #f0f0f0;
-    max-height: 300px;
+    max-height: 520px;
   }
 
   .chat-area {

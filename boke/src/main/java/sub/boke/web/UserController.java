@@ -97,7 +97,6 @@ public class UserController {
     }
 
     // 获取用户统计信息
-    // 在 UserController.java 中修正 getUserStats 方法
     @GetMapping("/{userId}/stats")
     public ResponseEntity<?> getUserStats(@PathVariable Long userId) {
         try {

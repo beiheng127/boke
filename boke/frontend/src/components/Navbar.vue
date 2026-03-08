@@ -4,7 +4,7 @@
     <div class="nav-container">
       <div class="nav-left">
         <router-link to="/" class="brand">
-          <strong>个人博客</strong>
+          <strong>北恒的个人博客</strong>
         </router-link>
         <div class="nav-spacer"></div>
 
@@ -520,6 +520,14 @@ onUnmounted(() => {
   .brand {
     font-size: 1.1rem;
   }
+
+  .unread-badge {
+    top: -4px;
+    right: -4px;
+    font-size: 0.6rem;
+    min-width: 16px;
+    padding: 1px 4px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -537,6 +545,33 @@ onUnmounted(() => {
 
   .nav-spacer {
     width: 12px;
+  }
+  
+  /* 在小屏幕上，导航链接只显示图标 */
+  .nav-icon-link span:not(.nav-icon):not(.unread-badge):not(.btn-icon),
+  .primary-btn span:not(.btn-icon),
+  .nav-link span:not(.nav-icon):not(.unread-badge) {
+    display: none;
+  }
+
+  .unread-badge {
+    top: 2px;
+    right: 2px;
+  }
+
+  /* 调整按钮和链接的间距 */
+  .nav-right {
+    gap: 4px;
+  }
+
+  .nav-link, .btn {
+    padding: 6px 8px;
+    min-width: auto;
+  }
+
+  /* 确保图标居中显示 */
+  .nav-link, .primary-btn {
+    justify-content: center;
   }
 }
 
@@ -583,43 +618,5 @@ onUnmounted(() => {
   }
 }
 
-/* 响应式设计调整 */
-@media (max-width: 768px) {
-  .unread-badge {
-    top: -4px;
-    right: -4px;
-    font-size: 0.6rem;
-    min-width: 16px;
-    padding: 1px 4px;
-  }
-}
 
-@media (max-width: 480px) {
-  /* 在小屏幕上，导航链接只显示图标 */
-  .nav-icon-link span:not(.nav-icon):not(.unread-badge):not(.btn-icon),
-  .primary-btn span:not(.btn-icon),
-  .nav-link span:not(.nav-icon):not(.unread-badge) {
-    display: none;
-  }
-
-  .unread-badge {
-    top: 2px;
-    right: 2px;
-  }
-
-  /* 调整按钮和链接的间距 */
-  .nav-right {
-    gap: 4px;
-  }
-
-  .nav-link, .btn {
-    padding: 6px 8px;
-    min-width: auto;
-  }
-
-  /* 确保图标居中显示 */
-  .nav-link, .primary-btn {
-    justify-content: center;
-  }
-}
 </style>

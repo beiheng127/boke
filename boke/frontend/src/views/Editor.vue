@@ -316,6 +316,13 @@ const editorConfig = {
       onSuccess(file, res) {
         console.log(`${file.name} 上传成功`, res)
       },
+      // 自定义插入，处理后端非标准格式
+      customInsert(res, insertFn) {
+        if (res.url) {
+          // 参数：url, alt, href
+          insertFn(res.url, res.url, res.url)
+        }
+      },
       onFailed(file, res) {
         console.error(`${file.name} 上传失败`, res)
         error.value = '图片上传失败，请重试'
